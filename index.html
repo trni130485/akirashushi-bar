@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Akira Sushi Bar</title>
+
+<!--Font-->
+<link href="https://fonts.cdnfonts.com/css/gang-of-three" rel="stylesheet">
+<style>
+@import url('https://fonts.cdnfonts.com/css/gang-of-three');
+</style>
+
+<!--Css-->
+
+<link href="Styles/HeaderNavFooter.css" rel="stylesheet">
+<link href="Styles/index.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--First Section-->
+
+<!--Header-->
+<header>
+	<a href="index.html"><img src="Media/logo 2.png" class="center" > </a>
+</header>
+
+
+<!--Line-->
+<hr class="hrtop">
+
+
+<!--Top Navigation Bar-->
+<nav> 
+	<div class="topnav">
+	
+  	<b><a class="active1" href="index.html">HOME</a></b>
+    <b><a href="Menu.html">MENU</a></b>
+  	<b><a href="Contact.html">CONTACT</a></b>
+  	<b><a href="About.html">ABOUT</a></b>
+	</div>
+</nav>
+
+
+
+<!--Main Body-->
+
+
+<!--Slideshow-->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Media/slide1.png" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <img src="Media/slide2.png" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <img src="Media/slide3.png" style="width:100%">
+ 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+<h1 style="
+  font-family: 'Gang of Three', sans-serif;
+  margin-top: 100px;                                          
+  font-size: 5em;
+  font-weight: 400;
+  text-align: center;">
+
+DISCOVER AKIRA SUSHI</h1>
+
+
+<div class="row">
+  <div class="column">
+    <a href="Menu.html"><img src="Media/Menu.jpg" alt="Menu" style="width:100%"></a>
+    <a href="Menu.html"><div class="centered">MENU</div></a>
+  </div>
+  <div class="column">
+    <a href="Contact.html"><img src="Media/Contact.jpg" alt="Contact" style="width:100%"></a>
+    <a href="Contact.html"><div class="centered">CONTACT</div></a>
+  </div>
+  <div class="column">
+    <a href="About.html"><img src="Media/About.jpg" alt="About" style="width:100%"></a>
+    <a href="About.html"><div class="centered">ABOUT</div></a>
+  </div>
+  
+</div> 
+
+
+<!--Contact Form-->
+<br>
+<h1 style="
+font-family: 'Gang of Three', sans-serif;
+margin-top: 100px;                                          
+font-size: 5em;
+font-weight: 400;
+text-align: center;">
+
+CONNECT WITH US</h1>
+
+<br>
+
+<div class="container2">
+  <form action="action_page.php">
+
+    <label style="color: white;" for="fname">FIRST NAME</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label style="color: white;" for="lname">LAST NAME</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label style="color: white;" for="subject">SUBJECT</label>
+    <textarea id="subject" class="textarea" name="subject" placeholder="Write something.." style=" height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div> 
+
+<!--Footer-->
+
+<footer>
+  <img src="Media/foot 3.png" 
+  style=" width: 100%;">
+</footer>
+
+</body>
+</html>

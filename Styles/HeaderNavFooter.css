@@ -1,0 +1,74 @@
+/* Header */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 300px;
+  width: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Dotted lightgrey line */
+
+.hrtop {
+  border: 1px dotted #7d7c7c;
+  margin-bottom: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+
+
+/* Navigation Bar */
+
+/* Add a black background color to the top navigation */
+.topnav {
+ 
+  overflow: hidden;
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 100px;
+ 
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: arial;
+  transition: 0.25s;
+
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  cursor: pointer;
+  color: red;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active1 {
+  color: red;
+}
+
+
+/* Footer */
+
+footer {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 100px;
+}
+

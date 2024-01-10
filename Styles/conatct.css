@@ -1,0 +1,92 @@
+/* CONTACT image */
+
+/* Container holding the image and the text */
+.container1 {
+	margin-top: 100px;
+	margin-right:3%;
+	margin-left: 3%;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: 'Gang of Three', sans-serif;                                             
+  font-size: 6.25em;
+  font-weight: 400;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* H1 */
+
+h1 {
+  font-family: 'Gang of Three', sans-serif;                                             
+	font-size: 5em;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* P */
+
+p { 
+  font-family: Calibri;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #747474;
+}
+
+/* Location Map*/ 
+
+.location-map {
+  color:red; 
+  text-decoration: none;
+}
+
+
+/* Contact Us*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #eb1717;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #bf2121;
+}
+
+/* Add a background color and some padding around the form */
+.container2 {
+	margin-left: 20%;
+	margin-right: 20%;
+  background-color: black;
+  padding: 20px;
+  font-family: Signika,sans-serif;
+} 
+
+.textarea {
+	font-family: Signika,sans-serif;
+	font-size: 14px;
+}

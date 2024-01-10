@@ -1,0 +1,88 @@
+/* MENU image */
+
+/* Container holding the image and the text */
+.container1 {
+  margin-top: 100px;
+	margin-right:3%;
+	margin-left: 3%;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: 'Gang of Three', sans-serif;                                             
+  font-size: 6.25em;
+  font-weight: 400;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Menu */
+
+.main-menu {
+  margin-right:25%;
+	margin-left: 5%;
+  margin-top: 100px;
+}
+
+h1 {
+  font-family: arial;
+}
+
+hr {
+border: 1px solid black;
+ margin-bottom: 30px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+}
+
+.imagemenu {
+  width: 200px; border-radius: 10px;
+}
+
+.dishname {
+  font-family: arial;
+}
+
+
+/* MENU Navigation Bar */
+
+/* Add a black background color to the top navigation */
+.menunav {
+ 
+  overflow: hidden;
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+ 
+
+}
+
+/* Style the links inside the navigation bar */
+.menunav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 19px;
+  font-family: arial;
+  transition: 0.25s;
+
+
+}
+
+/* Change the color of links on hover */
+.menunav a:hover {
+  cursor: pointer;
+  color: red;
+}
